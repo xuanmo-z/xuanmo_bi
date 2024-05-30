@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>widget</class>
+ <widget class="QWidget" name="widget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>712</width>
+    <height>726</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>数据筛选</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_3">
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_6">
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout">
+         <item>
+          <widget class="QComboBox" name="quick_date_comboBox">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>75</width>
+             <height>0</height>
+            </size>
+           </property>
+           <item>
+            <property name="text">
+             <string>快捷日期</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>今天</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>昨天</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>上周</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>上月</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>上季度</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>上年</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>本周</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>本月</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>本季度</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>本年</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_2">
+           <property name="text">
+            <string>起始日期</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QDateEdit" name="start_dateEdit">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="dateTime">
+            <datetime>
+             <hour>8</hour>
+             <minute>0</minute>
+             <second>0</second>
+             <year>2015</year>
+             <month>9</month>
+             <day>10</day>
+            </datetime>
+           </property>
+           <property name="date">
+            <date>
+             <year>2015</year>
+             <month>9</month>
+             <day>10</day>
+            </date>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_4">
+           <property name="text">
+            <string>结束日期</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QDateEdit" name="end_dateEdit">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="dateTime">
+            <datetime>
+             <hour>8</hour>
+             <minute>0</minute>
+             <second>0</second>
+             <year>2015</year>
+             <month>9</month>
+             <day>30</day>
+            </datetime>
+           </property>
+           <property name="date">
+            <date>
+             <year>2015</year>
+             <month>9</month>
+             <day>30</day>
+            </date>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_2">
+         <item>
+          <widget class="QLabel" name="label">
+           <property name="text">
+            <string>部门名称</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="dept_comparison_comboBox">
+           <item>
+            <property name="text">
+             <string>包含</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>左等于</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>右等于</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string/>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="dept_lineEdit">
+           <property name="placeholderText">
+            <string>多个条件用英文逗号隔开</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_3">
+         <item>
+          <widget class="QLabel" name="label_3">
+           <property name="text">
+            <string>营业员   </string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="employee_comparsion_comboBox">
+           <item>
+            <property name="text">
+             <string>包含</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>左等于</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>右等于</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="employee_lineEdit">
+           <property name="placeholderText">
+            <string>多个条件用英文逗号隔开</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_4">
+         <item>
+          <widget class="QLabel" name="label_5">
+           <property name="text">
+            <string>商品名称</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="goods_comparison_comboBox">
+           <item>
+            <property name="text">
+             <string>包含</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>左等于</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>右等于</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string/>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="goods_lineEdit">
+           <property name="placeholderText">
+            <string>多个条件用英文逗号隔开</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="QTextEdit" name="filtered_conditions_textEdit">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="readOnly">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <item>
+        <widget class="QListView" name="filtered_data_listView">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>180</width>
+           <height>16777215</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_7">
+         <item>
+          <widget class="QPushButton" name="filter_ok_btn">
+           <property name="text">
+            <string>确定</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="filter_cancel_btn">
+           <property name="text">
+            <string>取消</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_5"/>
+   </item>
+   <item>
+    <widget class="QTableView" name="database_tableView">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+       <horstretch>1</horstretch>
+       <verstretch>1</verstretch>
+      </sizepolicy>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

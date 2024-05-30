@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>895</width>
+    <height>695</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>商业BI工具</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="1" column="0">
+      <widget class="QLineEdit" name="update_title_lineEdit">
+       <property name="placeholderText">
+        <string>此处可修改标题</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="QWidget" name="show_widget" native="true">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+         <horstretch>1</horstretch>
+         <verstretch>1</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(195, 195, 195);</string>
+       </property>
+       <layout class="QFormLayout" name="formLayout">
+        <item row="0" column="0" colspan="2">
+         <widget class="QWebEngineView" name="show_plot_webEngineView">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="url">
+           <url>
+            <string>about:blank</string>
+           </url>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </item>
+     <item row="0" column="0">
+      <widget class="QWidget" name="options_widget" native="true">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>30</height>
+        </size>
+       </property>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <widget class="QPushButton" name="import_config_btn">
+          <property name="text">
+           <string>导入配置</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="datasource_btn">
+          <property name="text">
+           <string>数据源&gt;&gt;</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="filter_btn">
+          <property name="text">
+           <string>数据筛选</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QComboBox" name="select_type_comboBox">
+          <item>
+           <property name="text">
+            <string>选择报表类型</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>门店销售汇总</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>营业员销售汇总</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>门店销售走势</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item>
+         <widget class="QComboBox" name="sort_comboBox">
+          <item>
+           <property name="text">
+            <string>默认排序</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>汇总升序</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>汇总降序</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item>
+         <widget class="QComboBox" name="chart_type_comboBox">
+          <item>
+           <property name="text">
+            <string>默认柱形图</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>饼状图</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>折线图</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>直方图</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>条形图</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>散点图</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="draw_chart_btn">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="text">
+           <string>生成图表</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="save_chart_btn">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="text">
+           <string>保存图表</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QWebEngineView</class>
+   <extends>QWidget</extends>
+   <header location="global">QtWebEngineWidgets/QWebEngineView</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
