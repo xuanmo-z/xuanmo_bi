@@ -1,3 +1,5 @@
+#新增加了一些备注信息
+
 from PySide6.QtCore import Qt,QDate,QUrl
 from PySide6.QtWidgets import (QApplication,
                                QWidget,
