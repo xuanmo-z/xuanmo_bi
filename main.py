@@ -1,3 +1,5 @@
+#python3.8.5 适合win7及以上系统
+
 from PySide6.QtCore import Qt,QDate,QUrl
 from PySide6.QtWidgets import (QApplication,
                                QWidget,
